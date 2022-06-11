@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="html://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+
+<head>
+	<link rel="stylesheet" href="/css/loginStyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+	<meta charset="UTF-8">
+	<title>Login</title>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="form" id="login">
+			<h1>Login</h1>
+			<div>
+				<form th:action="@{/login}" method="post">
+					<div class="login">
+						<!-- error message -->
+						<div th:if="${param.error}">
+							<div class="alert alert-danger">Invalid username or password.</div>
+						</div>
+						<div class="form__input-group">
+							<span><input class="form__input" type="text" id="username" name="username"
+									placeholder="Enter Email ID" autofocus="autofocus"></span>
+						</div>
+						<div class="form__input-group">
+							<span><input class="form__input" type="password" id="password" name="password"
+									placeholder="Enter Password"></span>
+						</div>
+					</div>
+					<div class="boxButton">
+						<div>
+							<input type="submit" name="login-submit" id="login-submit" class="button" value="Log In">
+						</div>
+						<div class="loginRegister">
+							<span>New user? <a href="/" th:href="@{/registrazione}">Register
+									here</a></span>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
