@@ -1,11 +1,12 @@
 package it.uniroma3.siw.service;
 
+import java.util.ArrayList;
 import java.util.List;
-
-import javax.transaction.Transactional;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import it.uniroma3.siw.model.Utente;
 import it.uniroma3.siw.repository.UtenteRepository;
@@ -14,34 +15,27 @@ import it.uniroma3.siw.repository.UtenteRepository;
 public class UtenteService {
 	
 	@Autowired
-	private UtenteRepository ur;
+	private UtenteRepository utrepo;
 	
-	@Transactional
-	public Utente findById (Long id) {
-		return this.ur.findById(id).get();
-	}
+    @Transactional
+    public Utente save(Utente utente) {
+        return this.utrepo.save(utente);
+    }
+    
+    public Utente getUtenti(Long id) {
+        Optional<Utente> result = this.utrepo.findById(id);
+        return result.orElse(null);
+    }
 	
-	@Transactional
-	public Utente salva (Utente u) {
-		return this.ur.save(u);
+    public List<Utente> getAllUtenti() {
+        List<Utente> result = new ArrayList<>();
+        Iterable<Utente> iterable = this.utrepo.findAll();
+        for(Utente user : iterable)
+            result.add(user);
+        return result;
+    }
+    
+	public boolean alreadyExists(Utente u) {
+		return utrepo.existsByNomeAndCognome(u.getNome(), u.getCognome());
 	}
-	@Transactional
-	public void cancella (Utente u) {
-		this.ur.delete(u);
-	}
-	
-	@Transactional
-	public void cancellaTutti () {
-		this.ur.deleteAll();
-	}
-	
-	@Transactional
-	public Long conta () {
-		return this.ur.count();
-	}
-	@Transactional
-	public List<Utente> getAllUtenti() {
-		return (List<Utente>) this.ur.findAll();
-	}
-
 }

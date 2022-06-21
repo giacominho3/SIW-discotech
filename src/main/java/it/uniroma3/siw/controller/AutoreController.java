@@ -17,6 +17,7 @@ public class AutoreController {
 	@Autowired
 	AutoreService as;
 	
+	
 	@RequestMapping(value = "/autori", method = RequestMethod.GET)
 	public String mostraListaAutori (Model model) {
 		model.addAttribute("autori", this.as.listaAutori());

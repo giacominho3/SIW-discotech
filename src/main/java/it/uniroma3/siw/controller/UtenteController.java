@@ -11,7 +11,7 @@ import it.uniroma3.siw.service.UtenteService;
 
 @Controller
 public class UtenteController {
-	
+	/*
 	@Autowired
 	UtenteService us;
 	
@@ -26,5 +26,5 @@ public class UtenteController {
 		model.addAttribute("utente", this.us.findById(id));
 		return "utente.html";
 	}
-
+*/
 }

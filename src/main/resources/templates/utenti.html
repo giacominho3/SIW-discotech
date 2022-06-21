@@ -2,7 +2,7 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
-	<link rel="stylesheet" href="/css/mainStyle.css">
+
 	<meta charset="UTF-8">
 	<title>Elenco utenti</title>
 	<style>
@@ -13,17 +13,14 @@
 			background-attachment: fixed;
 		}
 	</style>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/mainStyle.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-	<div class="topnav">
-		<a href="/home">Home</a>
-		<a href="/autori">Autori</a>
-		<a href="/brani">Brani</a>
-		<a class="active" href="/utenti">Utenti</a>
-		<a href="/profilo">Profilo</a>
-		<a href="/logout">Logout</a>
-	</div>
+	<header th:replace="home.html :: navbar"></header>
+	<div class="space">
 	<h1>Utenti</h1>
 	<table>
 		<tr>
@@ -35,6 +32,30 @@
 			<td><a th:href="@{'/utente' + '/' + ${utente.id}}" th:text="${utente.cognome}"></a></td>
 		</tr>
 	</table>
+	<section id="foot" class="container-fluid" th:fragment="contatti">
+		<div class="container2">
+			<div class="title">
+				<h1>Per maggiori info</h1>
+			</div>
+			<div class="row">
+				<div class="col col-md-5 contattiText">
+					Via Vito Volterra, 62, 00146 Roma<br>
+					<a href="mailto:edo.craia@stud.uniroma3.it">didattica.ingegneria@uniroma3.it</a>
+					<br>Cell.: +393334455678<br>
+					<br>Fax: 0773123456<br>
+				</div>
+				<div class="col col-sm-2">
+					<div class="divider dividerContatti"></div>
+				</div>
+				<div class="col col-md-5">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5851.368820052638!2d12.466666085080364!3d41.85264939009061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13258a9240b893d9%3A0x8b6578a5a17ee26a!2sUniversit%C3%A0%20degli%20Studi%20Roma%20Tre%20-%20Ingegneria!5e0!3m2!1sit!2sit!4v1655651364300!5m2!1sit!2sit"
+						width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 
 </html>

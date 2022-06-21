@@ -5,6 +5,138 @@ html {
 	font-family: Poppins;
 }
 
+.space{
+	margin-top: 150px;	
+}
+
+.LoginButton1 {
+	margin-left: 15px;
+	color: white;
+	border-color: white;
+	
+}
+
+.LoginButton1:hover {
+	color: white;
+	border-color: white;
+	background-color: green;
+}
+
+.RegisterButton2 {
+	margin-left: 15px;
+	color: black;
+	border-color: white;
+	background-color: white
+}
+
+.RegisterButton2:hover {
+	color: black;
+	border-color: white;
+	background-color: white;
+}
+
+.LogoutButton3 {
+	margin-left: 94px;
+	color: red;
+	border-color: red;
+}
+
+.LogoutButton3:hover {
+	border-color: red;
+	background-color: red;
+}
+
+.nav{
+	background-color: white;
+}
+
+.navbar_dark {
+	background: #00000080;
+	color: #000000;
+	font-size: 30px;
+}
+
+
+
+.carousel-inner .carousel-item{
+	min-height: 700px;
+	background-size: cover;
+	background-position: center center;
+} 
+
+.right{
+	justify-content: right;
+}
+
+.left{
+	justify-content: right;
+}
+
+.container-fluid {
+	background: black;
+	margin: 0px;
+	color: white;
+	font-size: 20px;
+}
+
+.navbar-nav {
+	margin-right: 0%;
+}
+
+.title {
+	text-align: center; 
+	margin: 40px 0px;
+}
+
+.contattiText {
+	padding: 80px 0px 60px 0px;
+	text-align: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color:white;
+    background-color: transparent;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav_link:hover{
+	text-decoration: none;
+    color:white;
+}
+
+.container1 {
+	padding: 150px 50px 150px 50px;
+	
+}
+
+.container2 {
+	padding: 50px 50px 50px 50px;
+	
+}
+
+.descrizione{
+	background-color: #2b2828;
+	height:auto;
+	width: auto;
+}
+
+.divider {
+    height: 200px;
+    width: 2px;
+    opacity: .8;
+    background-color: #858f96;
+}
+
+.dividerContatti {
+	margin: 50px 0px 50px 75px;
+}
+.navbar_brand {
+    font-size: 35px;
+    justify-content: center;
+    color: white;
+}
+
 ::selection {
   background: rgba(255, 255, 255, 1);
 }
