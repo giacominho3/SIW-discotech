@@ -20,9 +20,6 @@ h4 {
 	color: #C2088F;
 }
 
-
-
-
 .pad{
 	padding-top:550px;
 }
@@ -40,14 +37,18 @@ a:hover {
 
 /* Custom default button */
 .btn-default,
-.btn-default:hover,
+
 .btn-default:focus {
-  color: #333;
+  color: black;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+  background-color: #C2088F;
+  
 }
 
+.btn-default:hover{
+	color: black;
+	background-color: white;
+}
 
 /*
  * Base structure
