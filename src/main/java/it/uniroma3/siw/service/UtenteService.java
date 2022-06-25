@@ -22,6 +22,11 @@ public class UtenteService {
         return this.utrepo.save(utente);
     }
     
+	@Transactional
+	public Utente findById (Long id) {
+		return this.utrepo.findById(id).get();
+	}
+    
     public Utente getUtenti(Long id) {
         Optional<Utente> result = this.utrepo.findById(id);
         return result.orElse(null);

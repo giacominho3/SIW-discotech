@@ -21,6 +21,7 @@ body{
 	background-color: white;
 }
 
+
 .navbar_dark {
 	background: #00000080;
 	color: #000000;
@@ -81,9 +82,20 @@ body{
 
 .socialbutton {
     padding: 20px 35px;
-    border-radius: 5px;
+    border-radius: 40px;
     background-color: rgb(230, 225, 225);
-    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
+    width: 100%;
+}
+
+.socialbutton1 {
+    padding: 20px 35px;
+    border-radius: 40px;
+    background-color: rgb(230, 225, 225);
+    margin-top: 15px;
     font-size: 14px;
     border: none;
     text-align: center;
@@ -95,6 +107,10 @@ body{
 }
 
 .socialbutton:hover {
+    box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+
+.socialbutton1:hover {
     box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
 }
 

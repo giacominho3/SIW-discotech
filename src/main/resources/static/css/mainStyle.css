@@ -16,6 +16,18 @@ html {
 	
 }
 
+.nav_link1{
+	text-decoration: none;
+    color: #C2088F;
+    background-color: transparent;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav_link1:hover{
+	text-decoration: none;
+    color: #C2088F;
+}
+
 .LoginButton1:hover {
 	color: white;
 	border-color: white;
@@ -217,6 +229,10 @@ td:hover {
 }
 
 a {
+	text-decoration: none;
+	color: rgba(194, 8, 143, 1);
+}
+a:hover{
 	text-decoration: none;
 	color: rgba(194, 8, 143, 1);
 }

@@ -58,10 +58,10 @@ public class AuthenticationController {
 		Credentials credentials = cs.getCredentials(userDetails.getUsername());
 
 		// superfluo perchè non uso una dashboard diversa per admin
-		if (credentials.getRole().equals(Credentials.ADMIN_ROLE)) {
+		/*if (credentials.getRole().equals(Credentials.ADMIN_ROLE)) {
 			return "home.html";
 		}
-
+		*/
 		model.addAttribute("Autori", this.chefs.findAllAutore());
 		model.addAttribute("BranoList", this.bs.listaBrani());
 
@@ -99,7 +99,7 @@ public class AuthenticationController {
 		if (!credenzialiBindingResult.hasErrors() && !utenteBindingResult.hasErrors()) {
 			credenziali.setUtente(utente);
 			cs.save(credenziali); // this also stores the User, thanks to Cascade.ALL policy
-			return "home.html";
+			return "login.html";
 		}
 
 		return "register.html";
