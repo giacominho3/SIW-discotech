@@ -1,6 +1,40 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+html {
+	font-family: Poppins;
+}
+body {
+			background-image: url('/images/AutoriBack.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+}
+
+.space{
+	margin-top: 150px;	
+}
+
+.marg{
+	margin-bottom: 200px;
+}
+
+.tt{
+	text-align:center;
+}
+h1{
+	color: #C2088F
+}
+
+.colr{
+	color: #C2088F;
+	text-decoration: none;
+}
+.colr:hover{
+	color: white;
+	text-decoration: none;
+}
+
 .LoginButton1 {
 	margin-left: 15px;
 	color: white;
@@ -8,13 +42,8 @@
 	
 }
 
-a{
-	    text-decoration: none;
-    color: rgba(194, 8, 143, 1);
-}
-a:hover{
-	    text-decoration: none;
-    color: rgba(194, 8, 143, 1);
+.ttt{
+	color: white;
 }
 
 .nav_link1{
@@ -28,6 +57,7 @@ a:hover{
 	text-decoration: none;
     color: #C2088F;
 }
+
 .LoginButton1:hover {
 	color: white;
 	border-color: white;
@@ -149,11 +179,6 @@ a:hover{
     color: white;
 }
 
-html {
-	font-family: Poppins;
-	background-color: black;
-}
-
 ::selection {
   background: rgba(255, 255, 255, 1);
 }
@@ -185,43 +210,69 @@ html {
 }
 
 h1 {
-	color: rgba(198, 8, 143, 1);
-	text-align: center;
-	font-size: 35px;
-}
-
-h2 {
-	color: rgba(198, 8, 143, 1);
+	color: #C2088F;
 	text-align: center;
 }
 
-#flex-container {
-	display: flex;
-	border: none;
-	height: 350px;
-	padding-left: 60px;
-	padding-right: 60px;
-}
-
-#flex-container a {
-	flex-grow: 1;
-	background-color: rgba(198, 8, 143, 1);
-	margin: 20px;
-	padding-top: 20px;
-	width: 0;
+button {
+	background-color: black;
+	color: #C2088F;
+	font-family: Poppins;
 	font-size: 20px;
-	text-align: center;
-	text-decoration: none;
-	color: rgba(0, 0, 0, 1);
+	border: none;
 	transition-duration: 0.5s;
+	margin-left: 1000px;
 }
 
-#flex-container a:hover {
-	background-color: #fa85db;
+button:hover {
+	background-color: #C2088F;
+	color: black;
+}
+
+.sorter {
+	color: white;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	color: #C2088F;
+}
+
+th {
+	font-size: 22px;
+}
+
+th, td {
+	padding: 20px;
+	border-bottom: 1px solid rgba(194, 8, 143, 0.35);
+	transition-duration: 0.5s;
+	text-align: center;
+		background-color: rgba(0 0 0 / 78%);
 	font-weight: bold;
-	flex-grow: 2;
+}
+
+td:hover {
+	background-color: rgba(194, 8, 143, 0.8);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(194, 8, 143, 1);
+}
+a:hover{
+	text-decoration: none;
+	color: rgba(194, 8, 143, 1);
 }
 
 i {
-	color: rgba(198, 8, 143, 1);
+	font-size: 30px;
+	color : rgba(194, 8, 143, 1);
+}
+
+td:hover a {
+	text-decoration: none;
+	color: white;
 }

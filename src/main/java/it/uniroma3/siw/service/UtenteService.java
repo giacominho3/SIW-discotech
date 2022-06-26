@@ -22,10 +22,15 @@ public class UtenteService {
         return this.utrepo.save(utente);
     }
     
-	@Transactional
+	/*@Transactional
 	public Utente findById (Long id) {
 		return this.utrepo.findById(id).get();
 	}
+    */
+    
+    public Optional<Utente> findById(Long id){
+    	return this.utrepo.findById(id);
+    }
     
     public Utente getUtenti(Long id) {
         Optional<Utente> result = this.utrepo.findById(id);
@@ -42,5 +47,16 @@ public class UtenteService {
     
 	public boolean alreadyExists(Utente u) {
 		return utrepo.existsByNomeAndCognome(u.getNome(), u.getCognome());
+	}
+	
+	public void update(Utente utente, Utente newUtente) {
+		utente.setNome(newUtente.getNome());
+		utente.setCognome(newUtente.getCognome());
+		this.utrepo.save(utente);
+	}
+	
+	@Transactional
+	public void delete(Long id) {
+		this.utrepo.deleteById(id);
 	}
 }
