@@ -1,0 +1,285 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+html {
+	font-family: Poppins;
+}
+
+body{
+	background-image: url('/images/utentibg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.tf{
+	text-align: center; 
+	font-weight:bold;
+	text-transform: uppercase;
+	color: white;
+}
+
+.marg{
+	margin-bottom: 40px;
+}
+.mar{
+	margin-top: 200px;
+}
+.colo{
+	background-color: #C2088F;
+	opacity: 0.9;
+	border-radius: 15px;
+}
+.padd{
+	padding-top:20px; 
+	padding-bottom:30px;
+}
+
+.space{
+	margin-top: 150px;	
+}
+.bgc{
+	text-align: center;
+	background-color: #C2088F;
+}
+.random{
+	width:40%
+}
+
+.LoginButton1 {
+	margin-left: 15px;
+	color: white;
+	border-color: white;
+	
+}
+
+.nav_link1{
+	text-decoration: none;
+    color: #C2088F;
+    background-color: transparent;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav_link1:hover{
+	text-decoration: none;
+    color: #C2088F;
+}
+
+.LoginButton1:hover {
+	color: white;
+	border-color: white;
+	background-color: green;
+}
+
+.RegisterButton2 {
+	margin-left: 15px;
+	color: black;
+	border-color: white;
+	background-color: white
+}
+
+.RegisterButton2:hover {
+	color: black;
+	border-color: white;
+	background-color: white;
+}
+
+.LogoutButton3 {
+	margin-left: 94px;
+	color: red;
+	border-color: red;
+}
+
+.LogoutButton3:hover {
+	border-color: red;
+	background-color: red;
+}
+
+.nav{
+	background-color: white;
+}
+
+.navbar_dark {
+	background: #00000080;
+	color: #000000;
+	font-size: 30px;
+}
+
+
+
+.carousel-inner .carousel-item{
+	min-height: 700px;
+	background-size: cover;
+	background-position: center center;
+} 
+
+.right{
+	justify-content: right;
+}
+
+.left{
+	justify-content: right;
+}
+
+.container-fluid {
+	background: black;
+	margin: 0px;
+	color: white;
+	font-size: 20px;
+}
+
+.navbar-nav {
+	margin-right: 0%;
+}
+
+.title {
+	text-align: center; 
+	margin: 40px 0px;
+}
+
+.contattiText {
+	padding: 80px 0px 60px 0px;
+	text-align: center;
+}
+
+.nav_link {
+    text-decoration: none;
+    color:white;
+    background-color: transparent;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.nav_link:hover{
+	text-decoration: none;
+    color:white;
+}
+
+.container1 {
+	padding: 150px 50px 150px 50px;
+	
+}
+
+.container2 {
+	padding: 50px 50px 50px 50px;
+	
+}
+
+.descrizione{
+	background-color: #2b2828;
+	height:auto;
+	width: auto;
+}
+
+.divider {
+    height: 200px;
+    width: 2px;
+    opacity: .8;
+    background-color: #858f96;
+}
+
+.dividerContatti {
+	margin: 50px 0px 50px 75px;
+}
+.navbar_brand {
+    font-size: 35px;
+    justify-content: center;
+    color: white;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 1);
+}
+
+.topnav {
+	background-color: black;
+	overflow: hidden;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	transition-duration: 0.5s;
+}
+
+.topnav a:hover {
+	background-color: #fa85db;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: #C2088F;
+	color: black;
+	font-weight: bold;
+}
+
+h1 {
+	color: #C2088F;
+	text-align: center;
+}
+
+button {
+	background-color: black;
+	color: #C2088F;
+	font-family: Poppins;
+	font-size: 20px;
+	border: none;
+	transition-duration: 0.5s;
+	margin-left: 1000px;
+}
+
+button:hover {
+	background-color: #C2088F;
+	color: black;
+}
+
+.sorter {
+	color: white;
+}
+
+table {
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	color: #C2088F;
+}
+
+th {
+	font-size: 22px;
+}
+
+th, td {
+	padding: 20px;
+	border-bottom: 1px solid rgba(194, 8, 143, 0.35);
+	transition-duration: 0.5s;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.9);
+	font-weight: bold;
+}
+
+td:hover {
+	background-color: rgba(194, 8, 143, 0.8);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: rgba(194, 8, 143, 1);
+}
+a:hover{
+	text-decoration: none;
+	color: rgba(194, 8, 143, 1);
+}
+
+i {
+	font-size: 30px;
+	color : rgba(194, 8, 143, 1);
+}
+
+td:hover a {
+	text-decoration: none;
+	color: white;
+}
